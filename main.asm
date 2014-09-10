@@ -69,6 +69,18 @@ clrOperation	mov.w #0x0,R6
 				jmp postClrOp
 
 
+setMaxValue		mov.w #0x00FF, R6
+				mov.b r6, 0(R15)
+				inc R15
+				jmp checkOperation
+
+setMinValue 	mov.w #0x0000, R6
+				mov.b r6, 0(R15)
+				inc R15
+				jmp checkOperation
+
+
+
 
 
 
