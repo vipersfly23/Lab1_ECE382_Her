@@ -6,7 +6,7 @@
 ; This program is implementing the basic function of adding, subtracting and multiplication
 ;	and max value of 255, and min value of 0. It also identifies clr function.
 ;
-;***THIS PROGRAM CHECKS OUT WITH ALL TEST CASE ACCURATELY***
+;***THIS PROGRAM CHECKS OUT WITH ALL TEST CASE ACCURATELY, A FUNCTIONALITY***
 ;-------------------------------------------------------------------------------
             .cdecls C,LIST,"msp430.h"       ; Include device header file
 
