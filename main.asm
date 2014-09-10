@@ -78,6 +78,37 @@ setMinValue 	mov.w #0x0000, R6
 				mov.b r6, 0(R15)
 				inc R15
 				jmp checkOperation
+multOperation	mov.w R6, R9
+				mov.w R8, R10
+				AND.w #0x0001, R10
+
+multCheck		cmp.w #0x0001, R8
+				jz endMultOperation
+				c
+
+				rra R8
+				rla R9
+				jmp multCheck
+
+valueIsOdd		add.w R6,R9
+				clrz
+				dec R8
+
+				jmp endMultOdd
+
+endMultOperation	cmp.w #0x0001, R10
+					jz valueIsOdd
+endMultOdd			mov.w R9, R6
+					cmp #0x00FF,R6
+					jge setMaxValue
+					clrn
+					jn setMinValue
+					mov.b r6, 0(R15)
+					inc R15
+					jmp checkOperation
+
+
+endProgram	jmp endProgram
 
 
 
