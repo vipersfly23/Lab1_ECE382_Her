@@ -68,7 +68,6 @@ clrOperation	mov.w #0x0,R6
 				inc R15
 				jmp postClrOp
 
-
 setMaxValue		mov.w #0x00FF, R6
 				mov.b r6, 0(R15)
 				inc R15
@@ -78,13 +77,15 @@ setMinValue 	mov.w #0x0000, R6
 				mov.b r6, 0(R15)
 				inc R15
 				jmp checkOperation
+
 multOperation	mov.w R6, R9
 				mov.w R8, R10
 				AND.w #0x0001, R10
 
 multCheck		cmp.w #0x0001, R8
 				jz endMultOperation
-				c
+				cmp.w #0x0, R8
+				jz valueMultZero
 
 				rra R8
 				rla R9
@@ -95,6 +96,11 @@ valueIsOdd		add.w R6,R9
 				dec R8
 
 				jmp endMultOdd
+valueMultZero
+					mov.w #0x00, R6
+					mov.b r6, 0(R15)
+					inc R15
+					jmp checkOperation
 
 endMultOperation	cmp.w #0x0001, R10
 					jz valueIsOdd
@@ -110,13 +116,6 @@ endMultOdd			mov.w R9, R6
 
 endProgram	jmp endProgram
 
-
-
-
-
-
-endProgram	jmp endProgram
-
 ;-------------------------------------------------------------------------------
 ;           Stack Pointer definition
 ;-------------------------------------------------------------------------------
@@ -128,3 +127,4 @@ endProgram	jmp endProgram
 ;-------------------------------------------------------------------------------
             .sect   ".reset"                ; MSP430 RESET Vector
             .short  RESET
+
