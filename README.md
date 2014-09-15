@@ -133,3 +133,7 @@ My Result:
 In conclusion, the simple calculator imeplemented using assembly language was a success. High understanding of the if/then/else statements were enhanced and understanding of loops was reinforced. The program implemented all required functionality, along with the B-functionality of setting a ceiling and floor value, and the A functionality of adding the multiplication operation, that takes O(log(N)) instead of O(N). The program tested and passed all test cases presented. 
 
 I became more profecient with assembly and comfortable with if/else/then statements and loops. I also learned the importance of debugging, taking my instructors advice definitely made this Lab a lot simplier. I also learned the importance of descriptive labels. By having descriptive labels, my program was a lot easier to follow and made debugging a lot easier. Overall this lab was a success. 
+
+
+####Documentation:
+  I referenced C2C Bodin's GitHub page after my instructor suggested it. I used his template for the overall lab. I used the ECE382.com website to access lab information and used the website to obtain the instruction sheet for the assembly language. No other help received.
