@@ -114,5 +114,17 @@ The multiplication operation was by far the most difficult part of this lab. I f
     
     *The rest of the commits are either for the README file, or me adding additional information to make the code more clear.*
 
+Testing:
+
+A Functionality
+
+0x22, 0x11, 0x22, 0x22, 0x33, 0x33, 0x08, 0x44, 0x08, 0x22, 0x09, 0x44, 0xff, 0x11, 0xff, 0x44, 0xcc, 0x33, 0x02, 0x33, 0x00, 0x44, 0x33, 0x33, 0x08, 0x55
+
+Result: 0x44, 0x11, 0x88, 0x00, 0x00, 0x00, 0xff, 0x00, 0xff, 0x00, 0x00, 0xff
+
+
+
 
 ###Conclusions/Lessons Learned
+
+In conclusion, the simple calculator imeplemented using assembly language was a success. High understanding of the if/then/else statements were enhanced and understanding of loops was reinforced. The program implemented all required functionality, along with the B-functionality of setting a ceiling and floor value, and the A functionality of adding the multiplication operation, that takes O(log(N)) instead of O(N). The program tested and passed all test cases presented. 
