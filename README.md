@@ -34,7 +34,7 @@ A-Functionality:
 ###Code
 #####Main:
 
-![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
+![alt text](https://raw.githubusercontent.com/vipersfly23/Lab1_ECE382_Her/master/Main_Code.GIF "Main Code")
 
   * R5 Points to the string of operations in ROM
   * R6 Is the accumulator
@@ -46,7 +46,7 @@ R5 is incremented every time, so it's going down the string and always points to
 
 #####Required Operations:
 
-![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
+![alt text](https://raw.githubusercontent.com/vipersfly23/Lab1_ECE382_Her/master/Operations_Code.GIF "Required Operations")
 
 The reason R7 always stores the operation. Hence the value for each operation is compared to the value in R7. The CLR_OP is checked before R8 is loaded with the second operator is because if the operation is a clear, then the next operator would need to be loaded into R6 and not R8 hence the sequence of the code.
 
@@ -67,13 +67,14 @@ The reason R7 always stores the operation. Hence the value for each operation is
 
 #####B-Functionality:
 
-![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
+![alt text](https://raw.githubusercontent.com/vipersfly23/Lab1_ECE382_Her/master/B_Functionality.GIF "B-Functionality")
 
 This is a simple check. It compares the value to 255, if it is greater, 255 is stored into R6. It then looks at the N flag, if there is a N flag, then the value is less than zero, and a 0 is stored in to R6.
 
 #####A-Functionality
 
-![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
+![alt text](https://raw.githubusercontent.com/vipersfly23/Lab1_ECE382_Her/master/A_Functionality_1.GIF "A-Functionality #1")
+![alt text](https://raw.githubusercontent.com/vipersfly23/Lab1_ECE382_Her/master/A_Functionality_2.GIF "A-Functionality #2")
 
 The multiplication operation was by far the most difficult part of this lab. I first conceptually thought about multiplication and broke it down into simple addition. The simple addition is 0(N), now applying simple division and multiplication, I realized I can multiply the first operator by two, and divide the second operator by two and the result will still be the same.
 
