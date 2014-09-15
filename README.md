@@ -17,13 +17,13 @@ The objective and Purpose of this lab is to code a simple calculator using assem
     
     END_OP - Ends the program
   
-  B Functionality:
+  B-Functionality:
   
     If result is above 255, only display 255.
     
     If result is below 0, only display 0.
   
-  A Functionality:
+  A-Functionality:
   
     MUL_OP - implement multiplication, multiply two numbers together. 0(log(n))
   
@@ -42,30 +42,30 @@ Main:
   * R8 Stores the second operator
   * R15 Stores the address for the results in RAM
 
-R5 is incremented everytime, so it's going down the string and always points to the byte in-line. The pointer is the key to this code, and is the bread and butter of the simple calculator. 
+R5 is incremented every time, so it's going down the string and always points to the byte in-line. The pointer is the key to this code, and is the bread and butter of the simple calculator. 
 
 Required Operations:
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
-The reason R7 always stores the operation. Hence the value for each operation is compared to the value in R7. THe CLR_OP is checked before R8 is loaded with the second operator is because if the operation is a clear, then the next operator would need to be loaded into R6 and not R8 hence the sequence of the code.
+The reason R7 always stores the operation. Hence the value for each operation is compared to the value in R7. The CLR_OP is checked before R8 is loaded with the second operator is because if the operation is a clear, then the next operator would need to be loaded into R6 and not R8 hence the sequence of the code.
 
 ADD_OP:
 
-- the two operators are simplied added together, stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
+- the two operators are implied added together, stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
  
 SUB_OP:
 
-- the second operator is subtracted from either the first operator or from the accmulator in R6. It is then stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
+- the second operator is subtracted from either the first operator or from the accumulator in R6. It is then stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
 
 CLR_OP:
 
 - Essentially stores a value of 0 into the accumulator.
 
 End_Op
-- The ending operation was modified to compensate for invalide operations. Essentailly, if there isn't a valide operation, such as add, sub, clr, or mul, the program will automatically end. The value 0x55 is still included.
+- The ending operation was modified to compensate for invalid operations. Essentially, if there isn't a valid operation, such as add, sub, clr, or mul, the program will automatically end. The value 0x55 is still included.
 
-B-Funxtionality:
+B-Functionality:
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
@@ -83,16 +83,15 @@ The multiplication operation was by far the most difficult part of this lab. I f
 
 #####Methodology
   
-    My methodology was divide and conquered. I knew that if I could solve the ADD_OP, I could easily solve for subtraction. I
+    My methodology was dividing and conquered. I knew that if I could solve the ADD_OP, I could easily solve for subtraction. I
     divided each task. My first goal was to simply have the operation work. I would test it with simple numbers. Once I
     accomplished the required functionality, i would work on the B-functionality, and simply added it to my already working
-    required operations. I broke the mulitplication operation into multiple pieces. First was to be able to multiple a number
+    Required operations. I broke the multiplication operation into multiple pieces. First was to be able to multiple a numbers
     by 2, second was multiplying it by an odd number. The third part was just putting the finishing touches on it, such as when
-    the multiplier is 0. After completing this. By breaking everything downt o simple pieces, I had few issues. I would test it
-    with values I knew the answer to, and used debugging to ensure everything was happening as it was suppose to be.
+    the multiplier is 0. After completing this. By breaking everything down to simple pieces, I had few issues. I would test it
+    with values I knew the answer to, and used debugging to ensure everything was happening as it was supposed to be.
     
-      There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with
-      anyything. My simple calculator *PASSED ALL GIVEN TEST CASES*
+      There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with anything. My simple calculator *PASSED ALL GIVEN TEST CASES*
 
 #####Commit 1
 
@@ -104,13 +103,13 @@ The multiplication operation was by far the most difficult part of this lab. I f
     
 #####Commit 3
 
-  This commit shows the process of putting together the multiplication operation. which was simple, but not completed at the time.
+  This commit shows the process of putting together the multiplication operation. Which was simple, but not completed at the time?
 
 #####Commit 4
   
-    This commit is the final compilation of coding. Though additional information will be added, the simple calculator is workng now.
+    This commit is the final compilation of coding. Though additional information will be added, the simple calculator is working now.
     
-    *The rest of the commits are either for the README file, or me addiing additional information to make the code more clear.*
+    *The rest of the commits are either for the README file, or me adding additional information to make the code more clear.*
 
 
-###Conclusions/Lessons Learend
+###Conclusions/Lessons Learned
