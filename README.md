@@ -7,7 +7,7 @@ Lab 1 for ECE 382, simple calculator program.
 ###Objective and Purpose
 The objective and Purpose of this lab is to code a simple calculator using assembly language with various functions. The purpose is to practice higher-level if/then/else and looping constructs.
 
-  Required Functionality:
+  #####Required Functionality:
   
     ADD_OP - add two numbers together
     
@@ -17,13 +17,13 @@ The objective and Purpose of this lab is to code a simple calculator using assem
     
     END_OP - Ends the program
   
-  B-Functionality:
+  #####B-Functionality:
   
     If result is above 255, only display 255.
     
     If result is below 0, only display 0.
   
-  A-Functionality:
+  #####A-Functionality:
   
     MUL_OP - implement multiplication, multiply two numbers together. 0(log(n))
   
@@ -32,7 +32,7 @@ The objective and Purpose of this lab is to code a simple calculator using assem
   Please Reference Pre-Lab assignment. (Turned into instructor)
 
 ###Code
-Main:
+#####Main:
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
@@ -44,34 +44,34 @@ Main:
 
 R5 is incremented every time, so it's going down the string and always points to the byte in-line. The pointer is the key to this code, and is the bread and butter of the simple calculator. 
 
-Required Operations:
+#####Required Operations:
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
 The reason R7 always stores the operation. Hence the value for each operation is compared to the value in R7. The CLR_OP is checked before R8 is loaded with the second operator is because if the operation is a clear, then the next operator would need to be loaded into R6 and not R8 hence the sequence of the code.
 
-ADD_OP:
+#####ADD_OP:
 
 - the two operators are implied added together, stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
  
-SUB_OP:
+#####SUB_OP:
 
 - the second operator is subtracted from either the first operator or from the accumulator in R6. It is then stored into R6(accumulator). The program than checks to see if it is bigger than 255 or less than 0. It is then stored into a memory address, location is in R15. The code then checks for the next operation. 
 
-CLR_OP:
+#####CLR_OP:
 
 - Essentially stores a value of 0 into the accumulator.
 
-End_Op
+#####End_Op
 - The ending operation was modified to compensate for invalid operations. Essentially, if there isn't a valid operation, such as add, sub, clr, or mul, the program will automatically end. The value 0x55 is still included.
 
-B-Functionality:
+#####B-Functionality:
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
 This is a simple check. It compares the value to 255, if it is greater, 255 is stored into R6. It then looks at the N flag, if there is a N flag, then the value is less than zero, and a 0 is stored in to R6.
 
-A-Functionality
+#####A-Functionality
 
 ![alt text](https://github.com/vipersfly23/CE3_Her/blob/master/Moore_Simulation.GIF?raw=true "simulation result")
 
