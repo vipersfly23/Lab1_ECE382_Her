@@ -19,7 +19,7 @@
                                             ; section
 ;*************DR. COULSTON, INSERT HERE************************
 .text
-equationArray .byte			0x22, 0x11, 0x22
+equationArray .byte			0x22, 0x11, 0x22, 0x22, 0x33, 0x33, 0x08, 0x44, 0x08, 0x22, 0x09, 0x44, 0xff, 0x11, 0xff, 0x44, 0xcc, 0x33, 0x02, 0x33, 0x00, 0x44, 0x33, 0x33, 0x08, 0x55
 
 
 ;-------------------------------------------------------------------------------
@@ -111,7 +111,7 @@ endMultOdd			mov.w R9, R6
 					jge setMaxValue
 					clrn
 					jn setMinValue
-					mov.b r6, 0(R15)git
+					mov.b r6, 0(R15)
 					inc R15
 					jmp checkOperation
 
