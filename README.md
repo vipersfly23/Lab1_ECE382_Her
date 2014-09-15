@@ -91,7 +91,8 @@ The multiplication operation was by far the most difficult part of this lab. I f
     the multiplier is 0. After completing this. By breaking everything downt o simple pieces, I had few issues. I would test it
     with values I knew the answer to, and used debugging to ensure everything was happening as it was suppose to be.
     
-      There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with anyything. My simple calculator *PASSED ALL GIVEN TEST CASES*
+      There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with
+      anyything. My simple calculator *PASSED ALL GIVEN TEST CASES*
 
 #####Commit 1
 
