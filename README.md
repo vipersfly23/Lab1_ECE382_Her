@@ -81,9 +81,15 @@ The multiplication operation was by far the most difficult part of this lab. I f
 
 ###Debugging/Testing
 
-#Methodology
+#####Methodology
   
-    My methodology was divide and conquered. I knew that if I could solve the ADD_OP, I could easily solve for subtraction. I divided each task. My first goal was to simply have the operation work. I would test it with simple numbers. Once I accomplished the required functionality, i would work on the B-functionality, and simply added it to my already working required operations. I broke the mulitplication operation into multiple pieces. First was to be able to multiple a number by 2, second was multiplying it by an odd number. The third part was just putting the finishing touches on it, such as when the multiplier is 0. After completing this. By breaking everything downt o simple pieces, I had few issues. I would test it with values I knew the answer to, and used debugging to ensure everything was happening as it was suppose to be.
+    My methodology was divide and conquered. I knew that if I could solve the ADD_OP, I could easily solve for subtraction. I
+    divided each task. My first goal was to simply have the operation work. I would test it with simple numbers. Once I
+    accomplished the required functionality, i would work on the B-functionality, and simply added it to my already working
+    required operations. I broke the mulitplication operation into multiple pieces. First was to be able to multiple a number
+    by 2, second was multiplying it by an odd number. The third part was just putting the finishing touches on it, such as when
+    the multiplier is 0. After completing this. By breaking everything downt o simple pieces, I had few issues. I would test it
+    with values I knew the answer to, and used debugging to ensure everything was happening as it was suppose to be.
     
       There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with anyything. My simple calculator *PASSED ALL GIVEN TEST CASES*
 
