@@ -87,19 +87,19 @@ The multiplication operation was by far the most difficult part of this lab. I f
     
       There were times i had issues, but it was primarily from using the wrong code, conceptually I didn't have an issue with anyything. My simple calculator *PASSED ALL GIVEN TEST CASES*
 
-#Commit 1
+#####Commit 1
 
   This commit was the work accomplished during class. the main set up, add operation, subtraction operation and clear operation was completed as presented. In the process of adding the B-functionality, which is checking for min_max.
   
-#Commit 2
+#####Commit 2
   
     This commit it indication the addition of checking for min and max values. This was a simple addition and took little time.
     
-#Commit 3
+#####Commit 3
 
   This commit shows the process of putting together the multiplication operation. which was simple, but not completed at the time.
 
-#Commit 4
+#####Commit 4
   
     This commit is the final compilation of coding. Though additional information will be added, the simple calculator is workng now.
     
